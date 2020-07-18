@@ -1,0 +1,27 @@
+.bg-warm-black {
+    background-color: #003747;
+}
+
+.bg-bjut-blue {
+    background-color: #0096c3;
+}
+
+.bg-bubbles {
+    background-color: #e7f5f9;
+}
+
+.bg-maastricht-blue {
+    background-color: #001c24;
+}
+
+.link-bubbles {
+    color: #e7f5f9;
+}
+
+.link-bubbles::hover {
+    color: white;
+}
+
+.gutter {
+	height: 20rpx;
+}
