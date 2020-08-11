@@ -16,7 +16,7 @@
 							<input
 									class="weui-input"
 									type="text"
-									placeholder="请输入您的学号"
+									placeholder="学号"
 									placeholder-class="weui-input__placeholder"
 									value="{{count}}"
 									bindinput="onInputCount"
@@ -38,7 +38,7 @@
 							<input
 									class="weui-input"
 									type="password"
-									placeholder="请输入教务系统密码"
+									placeholder="教务系统密码"
 									placeholder-class="weui-input__placeholder"
 									value="{{password}}"
 									bindinput="onInputPassword"
@@ -52,7 +52,7 @@
 			</view>
 		</view>
 
-		<view style="color: var(--weui-FG-1); text-align: center; padding: 0 100rpx 30rpx 100rpx; font-size: 25rpx"><text>登录信息会存在此设备中以自动登录\n密码留空以免密登录，服务器永不存储你的密码</text></view>
+		<view style="color: var(--weui-FG-1); text-align: center; padding: 0 100rpx 30rpx 100rpx; font-size: 25rpx"><text>登录信息会存本地，用以自动登录</text></view>
 		<view>
 			<button bindtap="onConfirm" type="primary">登录</button>
 		</view>
