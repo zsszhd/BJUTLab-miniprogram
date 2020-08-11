@@ -63,14 +63,14 @@ Page({
       success: (res) => {
         wx.request({
           actions: false,
-          methods: 'POST',
+          methods: 'url',
           data: {
-            'no': this.data.count,
-            'pass': this.data.password,
+            'id': this.data.count,
+            'password': this.data.password,
             'code': res.code,
           },
           path: 'login',
-          success: wx.$loginSuccess,
+          success: wx.loginSuccess,
           type: 'any',
         })
       },
@@ -115,7 +115,7 @@ Page({
 
   onShareAppMessage: function() {
     return {
-      title: '快来查分啦',
+      title: '实验室管理',
       path: '/pages/login/login',
     }
   },
