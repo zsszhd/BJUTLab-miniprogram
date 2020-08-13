@@ -62,12 +62,12 @@ Page({
     wx.login({
       success: (res) => {
         wx.request({
-          actions: false,
-          methods: 'url',
+          url: 'https://api.bjutlab.cn/Auth/login', // 登录接口
+          method: 'POST',
           data: {
             'id': this.data.count,
             'password': this.data.password,
-            'code': res.code,
+            type:0          
           },
           path: 'login',
           success: wx.loginSuccess,
