@@ -59,8 +59,22 @@
 		<view>
 			<button bindtap="morePage" type="default" style="margin: 1rem auto">关于</button>
 		</view>
+	<!--	<view class="reminder" >
+			<view class="left" >
+				<text>
+					未注册？
+				</text>				  
+			</view>
+			<view class="right">
+				<text bindtap="register">
+					立即注册
+				</text>				  
+			</view>
+		</view>
+		-->
 
 	</view>
+	
 	<view wx:if="{{isLoggedIn}}" style="padding-top: 60rpx">
 		<view class="page__bd">
 			<mp-loading type="circle" tips="正在载入…"></mp-loading>
