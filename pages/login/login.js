@@ -77,10 +77,7 @@ Page({
               application/json;charset=UTF-8
               json;charset=UTF-8;
               */
-          },
-         // path: 'login',
-          //success: wx.loginSuccess,
-          //type: 'any',
+          },         
           success: function (res) {
             console.log(res.data);
             wx.setStorage({
