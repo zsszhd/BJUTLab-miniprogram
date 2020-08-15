@@ -2,7 +2,7 @@
 	<view class="weui-form" style="background-color:transparent" wx:if="{{!isLoggedIn}}">
 		<view class="imgArea">
 			<view class="img">
-				<image style="height: 75px;width: 75px;" src="../images/logo/login_logo.png"></image>
+				<image style="height: 100px;width: 85px;" src="../../images/logo/login_logo.png"></image>
 			</view>
 		</view>
 
@@ -54,7 +54,7 @@
 
 		<view style="color: var(--weui-FG-1); text-align: center; padding: 0 100rpx 30rpx 100rpx; font-size: 25rpx"><text>登录信息会存本地，用以自动登录</text></view>
 		<view>
-			<button bindtap="onConfirm" type="primary">登录</button>
+			<button bindtap="onConfirm" type="primary" style="width:60%">登录</button>
 		</view>
 		<view>
 			<button bindtap="morePage" type="default" style="margin: 1rem auto">关于</button>
@@ -63,7 +63,7 @@
 	</view>
 	<view wx:if="{{isLoggedIn}}" style="padding-top: 60rpx">
 		<view class="page__bd">
-			<mp-loading type="circle" tips="正在载入成绩…"></mp-loading>
+			<mp-loading type="circle" tips="正在载入…"></mp-loading>
 		</view>
 	</view>
 </view>

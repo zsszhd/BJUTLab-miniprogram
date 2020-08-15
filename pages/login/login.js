@@ -69,9 +69,29 @@ Page({
             'password': this.data.password,
             type:0          
           },
-          path: 'login',
-          success: wx.loginSuccess,
-          type: 'any',
+          header: {
+            "Content-Type":"application/x-www-form-urlencoded"
+            /*经过反复测试
+              改成 application/text不行
+              json不行
+              application/json;charset=UTF-8
+              json;charset=UTF-8;
+              */
+          },
+         // path: 'login',
+          //success: wx.loginSuccess,
+          //type: 'any',
+          success: function (res) {
+            console.log(res.data);
+            wx.setStorage({
+              key: "name",
+              data: res.data
+            });
+            wx.redirectTo({
+              url: "../pages/info" //跳转页面
+            })
+          }
+            
         })
       },
     })
