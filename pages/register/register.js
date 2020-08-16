@@ -69,10 +69,10 @@ Page({
       })
       return false;
     }
-    var checkPhone = /^1(3|4|5|7|8)\d{9}$/;
-    if (!(checkPhone.test(school_id))) {
+    var checkid = /^1(3|4|5|7|8)\d{9}$/;
+    if (!(checkid.test(school_id))) {
       wx.showToast({
-        title: '手机号错误！',
+        title: '错误！',
         duration: 2000,
         image: '/images/register/wrong.png'
       })
