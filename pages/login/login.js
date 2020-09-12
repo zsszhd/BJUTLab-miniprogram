@@ -77,11 +77,13 @@ Page({
               application/json;charset=UTF-8
               json;charset=UTF-8;
               */
-          },         
+          },
+         // path: 'login',
+          //success: wx.loginSuccess,          
           success: function (res) {
             console.log(res.data);
             wx.setStorage({
-              key: "name",
+              key: "student",
               data: res.data
             });
             wx.redirectTo({
@@ -136,12 +138,12 @@ Page({
       path: '/pages/login/login',
     }
   },
-
-  morePage: function() {
-    wx.navigateTo({
-      url: '/pages/more/more',
-    })
-  },
+  
+  register: function (event) {
+    wx.redirectTo({
+      url: "/pages/register/register"
+    });
+  }
 })
 
 export {}

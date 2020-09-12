@@ -45,6 +45,18 @@
   right: 32px; 
  }
 
+ .reminder {
+  font-size: 12px;
+  margin-top: 20rpx;
+  margin-left: 450rpx;
+  display: flex;
+
+}
+
+.right{
+  color: #3775F6;
+}
+
  .weui-cell_select .weui-cell__bd:after {
   right: 32px;
  }

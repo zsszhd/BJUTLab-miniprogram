@@ -54,12 +54,10 @@
 
 		<view style="color: var(--weui-FG-1); text-align: center; padding: 0 100rpx 30rpx 100rpx; font-size: 25rpx"><text>登录信息会存本地，用以自动登录</text></view>
 		<view>
-			<button bindtap="onConfirm" type="primary" style="width:60%">登录</button>
+			<button bindtap="onConfirm" type="primary" style="background:#3775F6; width:90%">登录</button>
 		</view>
-		<view>
-			<button bindtap="morePage" type="default" style="margin: 1rem auto">关于</button>
-		</view>
-	<!--	<view class="reminder" >
+		
+		<view class="reminder" >
 			<view class="left" >
 				<text>
 					未注册？
@@ -71,7 +69,7 @@
 				</text>				  
 			</view>
 		</view>
-		-->
+		
 
 	</view>
 	

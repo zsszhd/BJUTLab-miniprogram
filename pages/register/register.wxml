@@ -16,25 +16,23 @@
   </view>
 
   <view class="section-container">
-    <image class='image' src='/images/register/password.png'></image>
+    <image class='image' src='/images/register/confirm_password.svg'></image>
     <input class="common-input" name="checkPass" type="password" placeholder="请确认密码"></input>
   </view>
 
-<view class='usertype'>
-  <text>类型</text>
-  <!-- 下拉框 -->
+  <view class="section-container">
+    <image class='image' src='/images/register/user_type.png'></image>
     <view class='select_box'>
       <view class='select' catchtap='selectTaps'>
-        <text class='select_text'>{{selectDatas[indexs]}}</text>
-        <!-- <image class='words_img' src='../../images/select.png'></image> -->
-        <image class='select_img {{shows&&"select_img_rotate"}}' src='../../images/register/select.png'></image>
+          <text class='select_text'>{{selectDatas[indexs]}}</text>        
+          <image class='select_img {{shows&&"select_img_rotate"}}' src='../../images/register/select.png'></image>
+        </view>
+          <view class='option_box' style='height:{{shows?(selectDatas.length>5?300:selectDatas.length*60):0}}rpx;'>
+          <text class='option' style='{{indexs==selectDatas.length-1&&"border:0;"}}' wx:for='{{selectDatas}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps'>{{item}}</text>
+          </view>
       </view>
-      <view class='option_box' style='height:{{shows?(selectDatas.length>5?300:selectDatas.length*60):0}}rpx;'>
-        <text class='option' style='{{indexs==selectDatas.length-1&&"border:0;"}}' wx:for='{{selectDatas}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps'>{{item}}</text>
-      </view>
-    </view>
-</view>
-
+  </view>
+ 
   <view class="btn-area">
     <button class="btn" form-type='submit' style="background:#3775F6; color:white">注册</button>
   </view>
