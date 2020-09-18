@@ -29,3 +29,209 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+/* pages/w_my/w_my.wxss */
+page{
+  background: white;
+}
+/*顶部个人信息  */
+.top{
+  height: 360rpx;
+  width: 100%;
+  background:#0096C3;
+  box-sizing: border-box;
+  padding: 80rpx 20rpx 0;
+  background: linear-gradient(to bottom right, #0096C3  , #ffffff); /*渐变*/
+  position: relative; 
+  overflow: hidden;  
+  z-index: 3;
+}
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: left;   
+  margin-left: 100rpx;
+  z-index: 10;
+}
+.login-info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;    
+  height: 100%;
+  z-index: 10;
+}
+.userinfo-avatar {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  z-index: 10;
+  overflow:hidden;
+
+}
+.userinfo-info{
+  margin-left: 48rpx;
+   display: flex;
+  flex-direction: column;
+  padding-top: 20rpx;
+  box-sizing: border-box;
+}
+.userinfo-nickname {
+  color: #000;
+  font-size: 36rpx;
+  font-weight: 700;
+  z-index: 10;
+}
+.userinfo-member{
+  color: #000;
+  font-size: 30rpx;
+  margin-top: 35rpx;
+  z-index: 10;
+}
+.userinfo-member1{
+  color: #000;
+  font-size: 30rpx;
+  margin-top: 35rpx;
+  text-align: center;
+  z-index: 10;
+}
+.get-userinfo{
+  color: #000;
+  background:#0096C3;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 38rpx;
+}
+.get-userinfo::after{
+  border: 0;
+}
+.login-right{
+  width: 46rpx;
+  height: 46rpx;
+}
+
+/* 列表 */
+.person-list {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top:30rpx; 
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  margin-top: -10rpx;
+  background: white;
+  z-index: 20;
+  position: relative; 
+}
+.list-item {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+   height: 130rpx; 
+  /* background: white; */
+  /* margin: 60rpx 0 0; */
+  border-top: 1rpx solid #d4d4d4;
+}
+.list-item:first-child {
+  border-top: 0;
+  margin-top: 25rpx;
+}
+
+.item1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.item-image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx;
+  margin-left: 30rpx;
+}
+.item-text {
+  font-size: 32rpx;
+  /* margin-left: 30rpx;  */
+}
+.with_arrow {  
+    width: 15px;  
+    height: 15px;  
+    margin: 20rpx 30rpx;
+}
+.person-line {
+  width: 100%;
+  height: 3rpx;
+  background: lightgray;
+}
+.item2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.car-number{
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  color: blue;
+}
+
+/* 顶部透明背景 */
+.bg1{
+  height: 70rpx;
+  width: 200rpx;
+  position: absolute;
+  bottom: 0;
+  left:-40rpx;
+  transform: rotate(-46deg);
+  background: #0096C3;
+  border-radius: 40rpx;
+  z-index: 5;
+}
+.bg2{
+  height: 110rpx;
+  width: 230rpx;
+  position: absolute;
+  top: 30rpx;
+  right:-50rpx;
+  transform: rotate(-46deg);
+  background: #0096C3;
+  border-radius: 50rpx;
+  z-index: 5;
+}
+.bg3{
+  height: 24rpx;
+  width: 230rpx;
+  position: absolute;
+  top: 220rpx;
+  right:-40rpx;
+  transform: rotate(-46deg);
+  background: #0096C3;
+  border-radius: 40rpx;
+  z-index: 5;
+}
+.bg4{
+  height: 32rpx;
+  width: 210rpx;
+  position: absolute;
+  top: -10rpx;
+  left:80rpx;
+  transform: rotate(-46deg);
+  background: #0096C3;
+  border-radius: 40rpx;
+  z-index: 5;
+}
+.bg5{
+  height: 30rpx;
+  width: 30rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 100rpx;
+  left:65rpx;
+  background: #0096C3;
+  z-index: 5;
+}

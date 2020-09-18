@@ -1,11 +1,12 @@
 {
   "pages": [
+    "pages/user/user",
     "pages/register/register",
     "pages/login/login",
     "pages/info/info",
     "pages/instrument/instrument",
-    "pages/security/security",
-    "pages/user/user"
+    "pages/security/security"
+   
   ],
   "window": {
     "backgroundTextStyle": "dark",

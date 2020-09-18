@@ -1,13 +1,74 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<!--pages/w_my/w_my.wxml-->
+<view class="top">
+      <view class="userinfo">
+         <open-data type="userAvatarUrl"  bindtap="bindViewTap" class="userinfo-avatar" mode="cover"></open-data>
+        <!-- <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image> -->
+        <view class="userinfo-info">
+          <open-data type="userNickName"  class="userinfo-nickname" lang="zh_CN"></open-data>
+          <block wx:if="{{member}}">
+            <text class="userinfo-member">{{memberdengji}}</text>            
+          </block>
+          <block wx:else>
+            <text class="userinfo-type1">普通用户</text>
+          </block>
+        </view>
+      </view>
+    <!-- 斜背景 -->
+    <view class='bg1'></view>
+    <view class='bg2'></view>
+    <view class='bg3'></view>
+    <view class='bg4'></view>
+    <view class='bg5'></view>
 </view>
+<!--列表  -->
+  <view class="person-list">
+
+    <!--预约历史-->
+    <view class="list-item"  bindtap='my_list1'> 
+      <view class="item1">
+         <image class="item-image" src="/images/1.png"></image> 
+        <text class="item-text">预约历史</text>
+      </view>
+      <view class="item2"> 
+        <image  class="with_arrow" src="/images/right.png"></image>
+      </view>
+    </view>
+
+    <!--我的预约-->
+    <!-- <view class="person-line"></view> 分割线-->
+    <view class="list-item"  bindtap='my_list2'> 
+      <view class="item1">
+         <image class="item-image" src="/images/2.png"></image> 
+        <text class="item-text">我的预约</text>
+      </view>
+      <view class="item2"> 
+        <!-- <text class='car-number'>2</text> -->
+        <image  class="with_arrow" src="/images/right.png"></image>
+      </view>
+    </view>
+
+    <!--登录绑定-->
+    <!-- <view class="list-item member" wx:if="{{!member}}" bindtap='my_list3'>
+      <view class="item1">
+       
+        <text class="item-text">登录绑定</text>
+      </view>
+      <view class="item2">
+        <image  class="with_arrow" src="/images/right.png"></image>
+      </view>
+    </view> -->
+
+    <!--我的信息-->
+    <view class="list-item stopcar" bindtap='my_list4'>
+      <view class="item1">
+         <image class="item-image" src="/images/4.png"></image> 
+        <text class="item-text">我的信息</text>
+      </view>
+      <view class="item2">
+        <image  class="with_arrow" src="/images/right.png"></image>
+      </view>
+    </view>    
+  </view>
+
+    <!-- <button  open-type="openSetting" >设置授权</button>    -->
+
