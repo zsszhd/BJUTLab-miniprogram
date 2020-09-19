@@ -118,7 +118,7 @@ Page({
         if (message != "注册成功") {
           wx.showModal({
             title: '注册失败！',
-            content: '该账户/昵称已被注册'
+            content: '该账户/昵称已被注册'//有错误，但是我还没有找出来，我要吃饭了,哼~ 2020/9/19 11.49
           });
           wx.hideLoading();
           setTimeout(function () {
