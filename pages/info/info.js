@@ -8,14 +8,14 @@ Page({
       title:"实验预约",
       icon:"/images/info/f4.png"
     },{
-      title: "个人预约信息",
-      icon: "/images/info/f5.png"
-    },{
       title: "实验记录",
       icon: "/images/info/f6.png"
-    }, {
+    },{      
       title: "签到记录",
-      icon: "/images/info/f1.png"
+      icon: "/images/info/f1.png"      
+    }, {
+      title: "共享文档",
+      icon: "/images/info/f5.png"
     }, {
       title: "器材信息",
       icon: "/images/info/f2.png"

@@ -7,7 +7,7 @@ Page({
     showClearBtn: false,
     isWaring: false,
     isLoggedIn: true,
-    url_logo: app.globalData.url_logo,
+    //url_logo: app.globalData.url_logo,
   },
 
   // 登陆表单数据处理-用户名输入框变更
@@ -87,7 +87,7 @@ Page({
               data: res.data
             });
             wx.redirectTo({
-              url: "../pages/info" //跳转页面
+              url: "/pages/info/info" //跳转页面
             })
           }
             
@@ -113,13 +113,13 @@ Page({
               token: app.globalData.authorization,
               complete: () => {
                 wx.switchTab({
-                  url: '/pages/overAllPage/overAllPage',
+                  url: '/pages/login/login',
                 })
               },
             })
           } else {
             wx.switchTab({
-              url: '/pages/overAllPage/overAllPage',
+              url: '/pages/login/login',
             })
           }
         },

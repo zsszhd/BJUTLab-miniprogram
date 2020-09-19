@@ -1,12 +1,21 @@
 {
-  "pages": [
-    "pages/user/user",
+  "pages": [    
     "pages/register/register",
     "pages/login/login",
+    
+    "pages/user/user",    
     "pages/info/info",
     "pages/instrument/instrument",
-    "pages/security/security"
-   
+    "pages/security/security",
+        
+    "pages/subcribe/subcribe",    
+    "pages/lab_record/lab_record",
+    "pages/sign_in/sign_in",
+    "pages/share_info/share_info",  
+    "pages/instrument_info/instrument_info",
+    "pages/instruction/instruction"
+
+    
   ],
   "window": {
     "backgroundTextStyle": "dark",

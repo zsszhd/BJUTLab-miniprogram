@@ -69,7 +69,7 @@ Page({
       })
       return false;
     }
-    var checkid = /^1(3|4|5|7|8)\d{9}$/;
+    /*var checkid = /^1(3|4|5|7|8)\d{9}$/;
     if (!(checkid.test(school_id))) {
       wx.showToast({
         title: '错误！',
@@ -77,7 +77,7 @@ Page({
         image: '/images/register/wrong.png'
       })
       return false;
-    }
+    }*/
     var checkName = /^.{2,11}$/;
     if(!(checkName.test(name))){
       wx.showToast({
@@ -96,9 +96,9 @@ Page({
       })
       return false;
     }
-    var utilMd5 = require('../../utils/md5.js');
-    var pass = utilMd5.hexMD5(pass);
-    var checkNum = utilMd5.hexMD5(checkNum);
+    // var utilMd5 = require('../../utils/md5.js');
+    //var pass = utilMd5.hexMD5(pass);
+    //var checkNum = utilMd5.hexMD5(checkNum);
     wx.showLoading({title: '注册中...'});
     wx.request({
       url: 'https://api.bjutlab.cn/Auth/register/user',
@@ -110,7 +110,7 @@ Page({
         school_id: school_id,
         name: name,
         pass: pass,
-        checkNum: checkNum
+        checkPass: checkPass
       },
       success: function (res) {
         var message = (res.data.msg);
