@@ -1,6 +1,6 @@
 {
   "pages": [    
-    
+    "pages/subcribe/subcribe",  
     "pages/info/info",
    
     "pages/login/login",
@@ -10,13 +10,13 @@
     "pages/instrument/instrument",
     "pages/security/security",
         
-    "pages/subcribe/subcribe",    
+     
     "pages/lab_record/lab_record",
     
     "pages/share_info/share_info",  
     "pages/instrument_info/instrument_info",
-    "pages/instruction/instruction"
-
+    "pages/instruction/instruction",
+    "pages/feedback/feedback"
     
   ],
   "window": {

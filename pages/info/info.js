@@ -20,7 +20,7 @@ Page({
       title: "器材信息",
       icon: "/images/info/f2.png"
     }, {
-      title: "操作指南",
+      title: "意见反馈",
       icon: "/images/info/f3.png"
     }]
   },
