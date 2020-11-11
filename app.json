@@ -1,11 +1,13 @@
 {
   "pages": [    
+    "pages/login/login",
+    "pages/register/register",
     "pages/subcribe/subcribe",  
     "pages/info/info",
    
-    "pages/login/login",
+   
     "pages/sign_in/sign_in",
-    "pages/register/register",
+    
     "pages/user/user",    
     "pages/instrument/instrument",
     "pages/security/security",
