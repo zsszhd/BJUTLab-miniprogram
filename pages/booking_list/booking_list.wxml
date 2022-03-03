@@ -1,0 +1,58 @@
+<!--pages/huiyuan/yuyue_list.wxml-->
+
+<view class="yuyue">
+    <view class="yuyue_biaoti">预约信息：教室02 （第3节）</view>
+    <view class="yuyue_neirong">
+        <view class="neirong1">预约时间：2020-06-14 星期5</view>
+        <view class="neirong2">主讲老师：黄菊华 | 高等数据</view>
+        <view class="neirong3">联系电话：13512345678 </view>
+        <view class="neirong4">备注说明：5</view>
+        <view class="neirong5">
+            <view class="neirong5_zuo daishenghe"> 审核状态：待审核 </view>
+            <view class="neirong5_you"> 取消申请 </view>
+        </view>
+    </view>
+</view>
+
+<view class="yuyue">
+    <view class="yuyue_biaoti">预约信息：教室02 （第3节）</view>
+    <view class="yuyue_neirong">
+        <view class="neirong1">预约时间：2020-06-14 星期5</view>
+        <view class="neirong2">主讲老师：黄菊华 | 高等数据</view>
+        <view class="neirong3">联系电话：13512345678 </view>
+        <view class="neirong4">备注说明：5</view>
+        <view class="neirong5">
+            <view class="neirong5_zuo daishenghe"> 审核状态：待审核 </view>
+            <view class="neirong5_you"> 取消申请 </view>
+        </view>
+    </view>
+</view>
+
+<view class="yuyue">
+    <view class="yuyue_biaoti">预约信息：教室02 （第3节）</view>
+    <view class="yuyue_neirong">
+        <view class="neirong1">预约时间：2020-06-14 星期5</view>
+        <view class="neirong2">主讲老师：黄菊华 | 高等数据</view>
+        <view class="neirong3">联系电话：13512345678 </view>
+        <view class="neirong4">备注说明：5</view>
+        <view class="neirong5">
+            <view class="neirong5_zuo yishenghe"> 审核状态：已审核 </view>
+            <view class="neirong5_you">  </view>
+        </view>
+    </view>
+</view>
+
+<view class='sys_caidan'>
+  <navigator class='sys_caidan_xiangmu' url='/pages/index/index' open-type='switchTab'>
+    <image src='/images/a-on.png' class='sys_caidan_xiangmu_img'></image>
+    <view class='sys_caidan_xiangmu_txt sys_caidan_xiangmu_xuanzhong'>首页</view>
+  </navigator>
+  <navigator class='sys_caidan_xiangmu'  url='/pages/yuyue/index' open-type='switchTab'>
+    <image src='/images/b-off.png' class='sys_caidan_xiangmu_img'></image>
+    <view class='sys_caidan_xiangmu_txt'>预约</view>
+  </navigator>
+  <navigator class='sys_caidan_xiangmu' url='/pages/huiyuan/index'  open-type='switchTab'>
+    <image src='/images/d-off.png' class='sys_caidan_xiangmu_img'></image>
+    <view class='sys_caidan_xiangmu_txt'>我的</view>
+  </navigator>
+</view>

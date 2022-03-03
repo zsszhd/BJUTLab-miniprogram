@@ -1,24 +1,22 @@
 {
   "pages": [    
+    "pages/info/info",
+    "pages/user/user", 
+    "pages/feedback/feedback",
+    "pages/booking_list/booking_list",
     "pages/login/login",
     "pages/register/register",
-    "pages/subcribe/subcribe",  
-    "pages/info/info",
-   
-   
-    "pages/sign_in/sign_in",
+    "pages/subcribe/subcribe",
     
-    "pages/user/user",    
+    "pages/sign_in/sign_in",
+   
     "pages/instrument/instrument",
     "pages/security/security",
-        
-     
     "pages/lab_record/lab_record",
-    
-    "pages/share_info/share_info",  
+    "pages/share_info/share_info",
     "pages/instrument_info/instrument_info",
-    "pages/instruction/instruction",
-    "pages/feedback/feedback"
+    "pages/instruction/instruction"
+    
     
   ],
   "window": {

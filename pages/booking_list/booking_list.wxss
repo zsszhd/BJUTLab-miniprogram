@@ -1,0 +1,31 @@
+/* pages/huiyuan/yuyue_list.wxss */
+.yuyue{
+  padding: 5px;
+  border-bottom: 1px dotted gainsboro ;
+  margin-bottom: 5px;
+}
+.yuyue_biaoti{
+  padding: 5px;
+  background-color: #f3f3f3;
+}
+.yuyue_neirong{
+  padding: 5px;
+  color: 12px;
+  color: gray;
+}
+.neirong1{}
+.neirong2{}
+.neirong3{}
+.neirong4{}
+.neirong5{
+  display: flex;
+}
+.neirong5_zuo{
+  color: black;
+  flex-grow: 1;
+}
+.neirong5_you{
+  color: orangered;
+}
+.daishenghe{color: red;}
+.yishenghe{color: green;}
